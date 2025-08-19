@@ -14,8 +14,8 @@ ConnType=$2
 ConnType=${ConnType,,}
 
 COMMAND=$3
-port=22
-pubkey=/home/user/ssh/pubkey
+port=22                                      #Edit your port
+pubkey=/home/user/ssh/pubkey                 #Type your actual pubkey
 
 while IFS= read -r line; do
     server="${line%%=*}"
