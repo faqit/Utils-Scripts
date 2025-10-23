@@ -33,7 +33,7 @@ PORTS=("$@")
 
 knock_tcp(){
 local host=$1 port=$2 timeout=$3
-( echo > /dev/tcp/"$host"/"$port" ) >/dev/null 2>$1 & pid=$!
+( echo > /dev/tcp/"$host"/"$port" ) 2>/dev/null & pid=$!
 echo Knocking $host:$port
 sleep "$timeout"
 if kill -0 "$pid" 2>/dev/null; then

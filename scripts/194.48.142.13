@@ -1,2 +1,0 @@
-./knock.sh: connect: Connection refused
-./knock.sh: line 36: /dev/tcp/194.48.142.13/12: Connection refused
