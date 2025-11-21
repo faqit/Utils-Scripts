@@ -48,12 +48,8 @@ fi
 }
 
 echo "Check availability for $HOST:$PORT"
-if [ "$TIMEOUT" != 1  ]; then
 echo "Timeout for TCP connection is $TIMEOUT seconds"
-fi
-if [ "$REPEATS" != 1 ]; then
 echo "Repeats $REPEATS times"
-fi
 
 for ((i=0;i<$REPEATS;i++)) do
   check_tcp

@@ -40,6 +40,8 @@ if kill -0 "$pid" 2>/dev/null; then
   kill "$pid" 2>/dev/null || true
   wait "$pid" 2>/dev/null || true
   echo "$host:$port tcp timed out"
+else
+  echo "$host:$port TCP packet sent"
 fi
 }
 
@@ -59,4 +61,4 @@ for i in "${PORTS[@]}"; do
   sleep "$SLEEP_TIMER"
 done
 
-echo "Knocking complete"
+echo "Done!"
