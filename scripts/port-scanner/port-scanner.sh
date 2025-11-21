@@ -24,7 +24,7 @@ datestamp=$(date +%d-%m-%Y-%H:%M:%S)
 
 echo "==================================" >> output/port-scanner-${HOST}-${datestamp}.txt
 echo "       PORT CHECKER START         " >> output/port-scanner-${HOST}-${datestamp}.txt
-echo " RANGE: FROM ${RANGE_ST} TO ${RANGE_FIN}"
+echo " RANGE: FROM ${RANGE_ST} TO ${RANGE_FIN}" >> output/port-scanner-${HOST}-${datestamp}.txt
 echo "==================================" >> output/port-scanner-${HOST}-${datestamp}.txt
 
 check_tcp(){
