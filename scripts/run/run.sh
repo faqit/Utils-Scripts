@@ -31,7 +31,7 @@ while IFS= read -r line; do
 done < "$filename"
 
 ConnectionKey="ssh ${user}@${ip} -p ${port} -i ${pubkey}"
-ConnectionPass="sshpash -p ${password} ssh ${user}@${ip} -p ${port} -o StrictHostKeyChecking=no"
+ConnectionPass="sshpass -p ${password} ssh ${user}@${ip} -p ${port} -o StrictHostKeyChecking=no"
 
 while true; do
   if [[ "$ConnType" == "pas"  ]]; then
